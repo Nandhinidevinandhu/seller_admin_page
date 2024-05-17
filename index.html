@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <form id="productForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+        <label for="sellingPrice">Selling Price:</label>
+        <input type="number" id="sellingPrice" required>
+        <button type="submit">Add Product</button>
+    </form>
+    <ul id="productList"></ul>
+    <h2>Total Price: $<span id="totalPrice">0</span></h2>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
